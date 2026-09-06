@@ -18,7 +18,6 @@ class MqttHandler {
 
  public:
   MqttHandler(WolService* wol_service, const char* ca_cert, const char* host, const int port, const char* user, const char* password,  const char* topic_command, const char* topic_status);
-  ~MqttHandler();
 
   void Connect();
   bool IsConnected();
