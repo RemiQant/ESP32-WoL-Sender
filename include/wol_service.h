@@ -12,8 +12,8 @@ class WolService {
   void StrToHex(const char* p, uint8_t* res, int length, int base);
 
   WiFiUDP udp_{};
-  const uint8_t mac_[kMacLength]{};
-  const uint8_t ip_[kIpLength]{};
+  uint8_t mac_[kMacLength]{};
+  uint8_t ip_[kIpLength]{};
   const uint8_t port_{};
 
  public:
